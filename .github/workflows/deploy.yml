@@ -33,8 +33,22 @@ jobs:
           ruby-version: "3.4"
           bundler-cache: true
 
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install eBook build dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc qrencode chromium-browser fonts-noto-core fonts-noto-extra fonts-noto-ui-core
+          python -m pip install --upgrade pip
+          pip install Pillow qrcode
+
+      - name: Build eBooks
+        run: |
+          chmod +x ./ebook/build-artifact.sh
+          ./ebook/build-artifact.sh --year all --format all
 
       - name: Build with Jekyll
         run: bundle exec jekyll build

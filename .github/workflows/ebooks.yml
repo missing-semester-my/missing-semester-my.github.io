@@ -1,0 +1,51 @@
+name: Build & Publish eBooks
+
+on:
+  push:
+    branches:
+      - missing-semester-my
+      - main
+    paths:
+      - '_2019/**'
+      - '_2020/**'
+      - '_2026/**'
+      - 'ebook/**'
+      - '.github/workflows/ebooks.yml'
+  workflow_dispatch:
+
+jobs:
+  build-ebooks:
+    name: Build PDF & EPUB eBooks
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc qrencode chromium-browser fonts-noto-core fonts-noto-extra fonts-noto-ui-core
+
+      - name: Install Python packages
+        run: |
+          python -m pip install --upgrade pip
+          pip install Pillow qrcode
+
+      - name: Build all eBook artifacts
+        run: |
+          chmod +x ./ebook/build-artifact.sh
+          ./ebook/build-artifact.sh --year all --format all
+
+      - name: Upload compiled eBook artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: missing-semester-ebooks
+          path: |
+            static/files/ebooks/*.pdf
+            static/files/ebooks/*.epub
