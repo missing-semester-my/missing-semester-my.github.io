@@ -84,7 +84,8 @@ CI service များ၊ formatter များ၊ linter များနှ�
 
 ## Continuous deployment
 
-Continuous deployment သည် ပြောင်းလဲမှုများကို လက်တွေ့ _deploy_ လုပ်ရန်အတွက် CI အခြေခံအဆောက်အအုံကို အသုံးပြုပါသည်။ ဥပမာအားဖြင့် Missing Semester repository သည် GitHub pages သို့ continuous deployment ကို အသုံးပြုထားရာ ကျွန်ုပ်တို့မှ မွမ်းမံထားသော သင်ခန်းစာ မှတ်စုများကို `git push` လုပ်လိုက်သည်နှင့် ဝဘ်ဆိုက်ကို အလိုအလျောက် build ပြီး deploy လုပ်ပေးပါသည်။ အပလီကေးရှင်းများအတွက် binary များ သို့မဟုတ် service များအတွက် Docker image များ ကဲ့သို့သော အခြားသော [artifact](/2026/shipping-code/) အမျိုးအစားများကိုလည်း CI တွင် build နိုင်ပါသည်။
+Continuous deployment သည် ပြောင်းလဲမှုများကို လက်တွေ့ _deploy_ လုပ်ရန်အတွက် CI အခြေခံအဆောက်အအုံကို အသုံးပြုပါသည်။ ဥပမာအားဖြင့် Missing Semester repository သည် GitHub pages သို့ continuous deployment ကို အသုံးပြုထားရာ ကျွန်ုပ်တို့မှ မွမ်းမံထားသော သင်ခန်းစာ မှတ်စုများကို `git push` လုပ်လိုက်သည်နှင့် ဝဘ်ဆိုက်ကို အလိုအလျောက် build ပြီး deploy လုပ်ပေးပါသည်။ Application များအတွက် binary များ သို့မဟုတ် service များအတွက် Docker image များ ကဲ့သို့သော အခြားသော [artifact](/2026/shipping-code/) အမျိုးအစားများကိုလည်း CI တွင် build နိုင်ပါသည်။
+
 
 # Command runners
 
