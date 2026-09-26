@@ -44,7 +44,7 @@ $ python logger.py color
 
 Log များကို ပိုမို ဖတ်ရှုရ လွယ်ကူစေရန် ကျွန်ုပ် အနှစ်သက်ဆုံး အကြံပြုချက်တစ်ခုမှာ အရောင်များ (Color code) တပ်ဆင်ခြင်း ဖြစ်ပါသည်။
 သင်၏ Terminal တွင် အရာရာကို ဖတ်ရှုရ လွယ်ကူစေရန် အရောင်များ အသုံးပြုထားသည်ကို သတိပြုမိပေမည်။ သို့သော် ၎င်းသည် မည်သို့ အလုပ်လုပ်သနည်း။
-`ls` သို့မဟုတ် `grep` ကဲ့သို့သော ပရိုဂရမ်များသည် Terminal အား Output ၏ အရောင်ပြောင်းလဲရန် ညွှန်ကြားသည့် အထူး စာလုံး အစဉ်လိုက်များ ဖြစ်သော [ANSI escape codes](https://en.wikipedia.org/wiki/ANSI_escape_code) များကို အသုံးပြုကြပါသည်။ ဥပမာအားဖြင့် `echo -e "\e[38;2;255;0;0mThis is red\e[0m"` ကို ရန်းလိုက်ပါက သင်၏ Terminal က [true color](https://github.com/termstandard/colors#truecolor-support-in-output-devices) ကို ထောက်ပံ့ပါက `This is red` ဟူသော စာတိုကို အနီရောင်ဖြင့် ပြသမည် ဖြစ်သည်။ အကယ်၍ Terminal က ထောက်ခံမှု မရှိပါက (ဥပမာ macOS ၏ Terminal.app) ပိုမို အထွေထွေ ထောက်ပံ့သော အရောင် ၁၆ ရောင် Escape code ကို သုံးနိုင်ပါသည်၊ ဥပမာ `echo -e "\e[31;1mThis is red\e[0m"`။
+`ls` သို့မဟုတ် `grep` ကဲ့သို့သော ပရိုဂရမ်များသည် Terminal အား Output ၏ အရောင်ပြောင်းလဲရန် ညွှန်ကြားသည့် အထူး စာလုံး အစဉ်လိုက်များ ဖြစ်သော [ANSI escape codes](https://en.wikipedia.org/wiki/ANSI_escape_code) များကို အသုံးပြုကြပါသည်။ ဥပမာအားဖြင့် `echo -e "\e[38;2;255;0;0mThis is red\e[0m"` ကို runလိုက်ပါက သင်၏ Terminal က [true color](https://github.com/termstandard/colors#truecolor-support-in-output-devices) ကို ထောက်ပံ့ပါက `This is red` ဟူသော စာတိုကို အနီရောင်ဖြင့် ပြသမည် ဖြစ်သည်။ အကယ်၍ Terminal က ထောက်ခံမှု မရှိပါက (ဥပမာ macOS ၏ Terminal.app) ပိုမို အထွေထွေ ထောက်ပံ့သော အရောင် ၁၆ ရောင် Escape code ကို သုံးနိုင်ပါသည်၊ ဥပမာ `echo -e "\e[31;1mThis is red\e[0m"`။
 
 အောက်ပါ Script သည် သင်၏ Terminal အတွင်းသို့ RGB အရောင်များစွာ ရိုက်နှိပ်ပြသပုံကို ဖော်ပြထားပါသည် (True color ထောက်ပံ့ပါက)။
 
@@ -61,7 +61,7 @@ done
 
 ## Third party logs
 
-ပိုမို ကြီးမားသော Software စနစ်များကို တည်ဆောက်လာသည့်အခါ သီးခြား ပရိုဂရမ်များအဖြစ် ရန်းနေသော Dependencies များနှင့် ကြုံတွေ့ရမည် ဖြစ်ပါသည်။
+ပိုမို ကြီးမားသော Software စနစ်များကို တည်ဆောက်လာသည့်အခါ သီးခြား ပရိုဂရမ်များအဖြစ် runနေသော Dependencies များနှင့် ကြုံတွေ့ရမည် ဖြစ်ပါသည်။
 Web server များ၊ Database များ သို့မဟုတ် Message broker များသည် ဤကဲ့သို့သော Dependency များ၏ အသုံးများသော ဥပမာများ ဖြစ်ကြသည်။
 ဤစနစ်များနှင့် မကြာခဏ ချိတ်ဆက် ဆောင်ရွက်သည့်အခါ Client side error စာတိုများ လုံလောက်မှု မရှိနိုင်သဖြင့် ယင်းတို့၏ Log များကို ဖတ်ရှုရန် လိုအပ်တတ်ပါသည်။
 
@@ -69,7 +69,7 @@ Web server များ၊ Database များ သို့မဟုတ် Mes
 UNIX စနစ်များတွင် ပရိုဂရမ်များသည် Log များကို `/var/log` အောက်၌ ရေးသားခြင်းမှာ အလေ့အထ ဖြစ်သည်။
 ဥပမာအားဖြင့် [NGINX](https://www.nginx.com/) Webserver သည် ယင်း၏ Log များကို `/var/log/nginx` အောက်တွင် ထားရှိသည်။
 နောက်ပိုင်းတွင် စနစ်များသည် **system log** ကို စတင် အသုံးပြုလာကြပြီး သင်၏ Log စာတို အားလုံး ရောက်ရှိရာ နေရာ ဖြစ်လာပါသည်။
-Linux စနစ် အများစု (အားလုံးတော့ မဟုတ်ပါ) သည် သင်၏ စနစ်ရှိ Service များ ဖွင့်ထားခြင်း၊ ရန်းနေခြင်း အစရှိသည်တို့ကို ထိန်းချုပ်သော System Daemon ဖြစ်သည့် `systemd` ကို အသုံးပြုကြသည်။
+Linux စနစ် အများစု (အားလုံးတော့ မဟုတ်ပါ) သည် သင်၏ စနစ်ရှိ Service များ ဖွင့်ထားခြင်း၊ runနေခြင်း အစရှိသည်တို့ကို ထိန်းချုပ်သော System Daemon ဖြစ်သည့် `systemd` ကို အသုံးပြုကြသည်။
 `systemd` သည် Log များကို `/var/log/journal` အောက်တွင် သီးသန့် Format ဖြင့် ထားရှိပြီး [`journalctl`](https://www.man7.org/linux/man-pages/man1/journalctl.1.html) Command ကို အသုံးပြု၍ မက်ဆေ့ဂျ်များကို ပြသနိုင်ပါသည်။
 အလားတူ macOS တွင် `/var/log/system.log` ရှိနေဆဲ ဖြစ်သော်လည်း tools အမြောက်အမြားသည် System log ကို သုံးလာကြပြီး [`log show`](https://www.manpagez.com/man/1/log/) ဖြင့် ကြည့်ရှုနိုင်ပါသည်။
 UNIX စနစ် အများစုတွင် Kernel log များကို ကြည့်ရှုရန် [`dmesg`](https://www.man7.org/linux/man-pages/man1/dmesg.1.html) Command ကိုလည်း အသုံးပြုနိုင်ပါသည်။
@@ -93,7 +93,7 @@ Data wrangling သင်ခန်းစာတွင် တွေ့မြင်�
 ## Debuggers
 
 Printf debugging သည် မလုံလောက်တော့သည့်အခါ Debugger တစ်ခုကို အသုံးပြုသင့်ပါသည်။
-Debugger ဆိုသည်မှာ ပရိုဂရမ်၏ ရန်းနေမှုကို ချိတ်ဆက် ကွပ်ကဲနိုင်သော ပရိုဂရမ် ဖြစ်ပြီး အောက်ပါတို့ကို ပြုလုပ်နိုင်ပါသည် -
+Debugger ဆိုသည်မှာ ပရိုဂရမ်၏ runနေမှုကို ချိတ်ဆက် ကွပ်ကဲနိုင်သော ပရိုဂရမ် ဖြစ်ပြီး အောက်ပါတို့ကို ပြုလုပ်နိုင်ပါသည် -
 
 - သီးခြား စာကြောင်းသို့ ရောက်ရှိသောအခါ ပရိုဂရမ်၏ အလုပ်လုပ်နေမှုကို ခေတ္တ ရပ်တန့်ခြင်း။
 - ပရိုဂရမ်ကို ညွှန်ကြားချက် တစ်ခုချင်းစီအလိုက် တဆင့်ချင်းစီ (step-by-step) သွားရောက်ခြင်း။
@@ -107,11 +107,11 @@ Python တွင် ယင်းသည် Python Debugger [`pdb`](https://docs.p
 `pdb` က ထောက်ပံ့ပေးသော Command အချို့၏ အတိုချုပ် ရှင်းလင်းချက်မှာ အောက်ပါအတိုင်း ဖြစ်ပါသည် -
 
 - **l**(ist) - လက်ရှိ စာကြောင်း ဘေးပတ်ပတ်လည် ၁၁ ကြောင်းကို ပြသမည်။
-- **s**(tep) - လက်ရှိ စာကြောင်းကို ရန်းပြီး ပထမဆုံး ရနိုင်သော နေရာတွင် ရပ်မည်။
+- **s**(tep) - လက်ရှိ စာကြောင်းကို runပြီး ပထမဆုံး ရနိုင်သော နေရာတွင် ရပ်မည်။
 - **n**(ext) - လက်ရှိ function ၏ နောက် စာကြောင်း ရောက်သည်အထိ သို့မဟုတ် Return ပြန်သည်အထိ ဆက်သွားမည်။
 - **b**(reak) - Breakpoint သတ်မှတ်မည်။
 - **p**(rint) - လက်ရှိ Context တွင် Expression ကို တွက်ချက်ပြမည်။ [`pprint`](https://docs.python.org/3/library/pprint.html) သုံးလိုပါက **pp** လည်း ရှိသည်။
-- **r**(eturn) - လက်ရှိ function return ပြန်သည်အထိ ဆက်လက် ရန်းမည်။
+- **r**(eturn) - လက်ရှိ function return ပြန်သည်အထိ ဆက်လက် runမည်။
 - **q**(uit) - Debugger မှ ထွက်မည်။
 
 အောက်ပါ Bug ပါဝင်သော Python Code ကို ပြင်ဆင်ရန် `pdb` ကို အသုံးပြုပုံ နမူနာကို လေ့လာကြည့်ပါ။ (သင်ခန်းစာ ဗီဒီယိုကို ကြည့်ပါ)။
@@ -129,7 +129,7 @@ def bubble_sort(arr):
 print(bubble_sort([4, 2, 1, 8, 7, 6]))
 ```
 
-Python သည် Interpreted language ဖြစ်သောကြောင့် `pdb` shell ကို အသုံးပြု၍ Command များ နှင့် Instruction များကို ရန်းနိုင်သည်ကို သတိပြုပါ။
+Python သည် Interpreted language ဖြစ်သောကြောင့် `pdb` shell ကို အသုံးပြု၍ Command များ နှင့် Instruction များကို runနိုင်သည်ကို သတိပြုပါ။
 [`ipdb`](https://pypi.org/project/ipdb/) သည် [`IPython`](https://ipython.org) REPL ကို အသုံးပြုထားသည့် ပိုမိုကောင်းမွန်သော `pdb` ဖြစ်ပြီး Tab completion, Syntax highlighting, Tracebacks များကို ပေးစွမ်းနိုင်ပါသည်။
 
 Low-level programming အတွက်ဆိုလျှင် [`gdb`](https://www.gnu.org/software/gdb/) (နှင့် ယင်း၏ [`pwndbg`](https://github.com/pwndbg/pwndbg)) သို့မဟုတ် [`lldb`](https://lldb.llvm.org/) တို့ကို ကြည့်ရှုလိုပါလိမ့်မည်။
@@ -142,7 +142,7 @@ Low-level programming အတွက်ဆိုလျှင် [`gdb`](https://ww
 ပရိုဂရမ်များသည် Kernel သာ ပြုလုပ်နိုင်သော လုပ်ဆောင်ချက်များကို ဆောင်ရွက်ရန် လိုအပ်သည့်အခါ [System Calls](https://en.wikipedia.org/wiki/System_call) များကို အသုံးပြုကြသည်။
 သင်၏ ပရိုဂရမ် ပြုလုပ်သော Syscall များကို ခြေရာခံပေးသည့် Command များ ရှိပါသည်။ Linux တွင် [`strace`](https://www.man7.org/linux/man-pages/man1/strace.1.html) ရှိပြီး macOS နှင့် BSD တွင် [`dtrace`](https://dtrace.org/about/) ရှိပါသည်။ `dtrace` သည် ယင်း၏ မူပိုင် `D` ဘာသာစကားကို သုံးသဖြင့် သုံးရခက်ခဲနိုင်သော်လည်း `strace` နှင့် ပိုမို တူညီသော Wrapper ဖြစ်သည့် [`dtruss`](https://www.manpagez.com/man/1/dtruss/) ရှိပါသည် (အသေးစိတ်ကို [ဒီမှာ](https://8thlight.com/blog/colin-jones/2015/11/06/dtrace-even-better-than-strace-for-osx.html) ကြည့်ပါ)။
 
-အောက်တွင် `ls` ၏ ရန်းမှုအတွက် [`stat`](https://www.man7.org/linux/man-pages/man2/stat.2.html) syscall trace များကို ပြသရန် `strace` သို့မဟုတ် `dtruss` ကို အသုံးပြုပုံ နမူနာကို ဖော်ပြထားပါသည်။ `strace` ကို ပိုမို အသေးစိတ် လေ့လာရန် [ဤဆောင်းပါး](https://blogs.oracle.com/linux/strace-the-sysadmins-microscope-v2) နှင့် [ဤ zine](https://jvns.ca/strace-zine-unfolded.pdf) တို့သည် ဖတ်ရှုရန် ကောင်းမွန်ပါသည်။
+အောက်တွင် `ls` ၏ runမှုအတွက် [`stat`](https://www.man7.org/linux/man-pages/man2/stat.2.html) syscall trace များကို ပြသရန် `strace` သို့မဟုတ် `dtruss` ကို အသုံးပြုပုံ နမူနာကို ဖော်ပြထားပါသည်။ `strace` ကို ပိုမို အသေးစိတ် လေ့လာရန် [ဤဆောင်းပါး](https://blogs.oracle.com/linux/strace-the-sysadmins-microscope-v2) နှင့် [ဤ zine](https://jvns.ca/strace-zine-unfolded.pdf) တို့သည် ဖတ်ရှုရန် ကောင်းမွန်ပါသည်။
 
 ```bash
 # On Linux
@@ -157,13 +157,13 @@ sudo dtruss -t lstat64_extended ls -l > /dev/null
 Web development အတွက် Chrome/Firefox ၏ Developer tools များသည် အလွန် အဆင်ပြေပါသည်။ ယင်းတို့တွင် အသုံးဝင်သော Tool များစွာ ပါဝင်ပါသည် -
 - Source code - မည်သည့် ဝဘ်ဆိုက်၏ HTML/CSS/JS source code ကိုမဆို စစ်ဆေးခြင်း။
 - Live HTML, CSS, JS modification - စမ်းသပ်ရန်အတွက် ဝဘ်ဆိုက် အကြောင်းအရာ၊ ပုံစံ၊ အမူအကျင့်များကို ပြောင်းလဲခြင်း။
-- Javascript shell - JS REPL တွင် Command များ ရန်းခြင်း။
+- Javascript shell - JS REPL တွင် Command များ runခြင်း။
 - Network - Request များ၏ အချိန်ဇယားကို ဆန်းစစ်ခြင်း။
 - Storage - Cookies နှင့် Local application storage များကို ကြည့်ရှုခြင်း။
 
 ## Static Analysis
 
-အချို့သော ပြဿနာများအတွက် မည်သည့် Code ကိုမျှ ရန်းရန် မလိုပါ။
+အချို့သော ပြဿနာများအတွက် မည်သည့် Code ကိုမျှ runရန် မလိုပါ။
 ဥပမာအားဖြင့် Code ကို သေချာ ကြည့်ရုံဖြင့် သင်၏ Loop variable သည် ရှိပြီးသား Variable သို့မဟုတ် Function အမည်ကို ဖုံးအုပ် (shadowing) နေသည်ကို သို့မဟုတ် သတ်မှတ်ခြင်း မပြုမီ Variable ကို ဖတ်နေသည်ကို တွေ့ရှိနိုင်ပါသည်။
 ဤနေရာတွင် [static analysis](https://en.wikipedia.org/wiki/Static_program_analysis) tool များ ရောက်ရှိလာပါသည်။
 Static analysis ပရိုဂရမ်များသည် Source code ကို လက်ခံပြီး ယင်း၏ မှန်ကန်မှုကို သုံးသပ်ရန် Coding rules များကို သုံး၍ စန်းစစ်ပေးပါသည်။
@@ -186,8 +186,8 @@ time.sleep(60)
 print(baz)
 ```
 
-Static analysis tool များသည် ဤကဲ့သို့သော ပြဿနာများကို ရှာဖွေပေးနိုင်ပါသည်။ [`pyflakes`](https://pypi.org/project/pyflakes) ကို ရန်းလိုက်ပါက Bug နှစ်ခုစလုံးနှင့် ပတ်သက်သော Error များကို ရရှိမည် ဖြစ်သည်။ [`mypy`](https://mypy-lang.org/) သည် Type စစ်ဆေးမှု ပြဿနာများကို ရှာဖွေပေးနိုင်သော အခြား Tool ဖြစ်ပါသည်။ ဤနေရာတွင် `mypy` က `bar` သည် မူလက `int` ဖြစ်ပြီး နောက်ပိုင်း `float` သို့ ပြောင်းလဲသွားကြောင်း သတိပေးမည် ဖြစ်သည်။
-ဤပြဿနာ အားလုံးကို Code ကို ရန်းစရာ မလိုဘဲ စစ်ဆေးတွေ့ရှိခဲ့ခြင်း ဖြစ်သည်ကို သတိပြုပါ။
+Static analysis tool များသည် ဤကဲ့သို့သော ပြဿနာများကို ရှာဖွေပေးနိုင်ပါသည်။ [`pyflakes`](https://pypi.org/project/pyflakes) ကို runလိုက်ပါက Bug နှစ်ခုစလုံးနှင့် ပတ်သက်သော Error များကို ရရှိမည် ဖြစ်သည်။ [`mypy`](https://mypy-lang.org/) သည် Type စစ်ဆေးမှု ပြဿနာများကို ရှာဖွေပေးနိုင်သော အခြား Tool ဖြစ်ပါသည်။ ဤနေရာတွင် `mypy` က `bar` သည် မူလက `int` ဖြစ်ပြီး နောက်ပိုင်း `float` သို့ ပြောင်းလဲသွားကြောင်း သတိပေးမည် ဖြစ်သည်။
+ဤပြဿနာ အားလုံးကို Code ကို runစရာ မလိုဘဲ စစ်ဆေးတွေ့ရှိခဲ့ခြင်း ဖြစ်သည်ကို သတိပြုပါ။
 
 ```bash
 $ pyflakes foobar.py
@@ -243,13 +243,13 @@ print(time.time() - start)
 # 0.5713930130004883
 ```
 
-သို့သော် နာရီကြည့် ကြာမြင့်ချိန် (Wall clock time) သည် အလှည့်အပတ် ဖြစ်နိုင်သည်၊ အကြောင်းမှာ ကွန်ပျူတာသည် အခြား Process များကို ရန်းနေနိုင်သလို Event များကို စောင့်ဆိုင်းနေနိုင်သောကြောင့် ဖြစ်သည်။ Tool များသည် _Real_, _User_ နှင့် _Sys_ time တို့ကို ခွဲခြားသတ်မှတ်လေ့ ရှိကြပါသည်။ ယေဘုယျအားဖြင့် _User_ + _Sys_ သည် ပရိုဂရမ်က CPU တွင် အမှန်တကယ် ကုန်လွန်ခဲ့သော အချိန်ကို ဖော်ပြပေးသည် ([အသေးစိတ်ကို ဒီမှာ ကြည့်ပါ](https://stackoverflow.com/questions/556405/what-do-real-user-and-sys-mean-in-the-output-of-time1))။
+သို့သော် နာရီကြည့် ကြာမြင့်ချိန် (Wall clock time) သည် အလှည့်အပတ် ဖြစ်နိုင်သည်၊ အကြောင်းမှာ ကွန်ပျူတာသည် အခြား Process များကို runနေနိုင်သလို Event များကို စောင့်ဆိုင်းနေနိုင်သောကြောင့် ဖြစ်သည်။ Tool များသည် _Real_, _User_ နှင့် _Sys_ time တို့ကို ခွဲခြားသတ်မှတ်လေ့ ရှိကြပါသည်။ ယေဘုယျအားဖြင့် _User_ + _Sys_ သည် ပရိုဂရမ်က CPU တွင် အမှန်တကယ် ကုန်လွန်ခဲ့သော အချိန်ကို ဖော်ပြပေးသည် ([အသေးစိတ်ကို ဒီမှာ ကြည့်ပါ](https://stackoverflow.com/questions/556405/what-do-real-user-and-sys-mean-in-the-output-of-time1))။
 
 - _Real_ - ပရိုဂရမ် စတင်ချိန်မှ ပြီးဆုံးချိန်အထိ နာရီကြည့် ကုန်လွန်ချိန် (အခြား process များ နှင့် စောင့်ဆိုင်းချိန်များ ပါဝင်သည်)
-- _User_ - User code ကို ရန်းရာတွင် CPU ၌ ကုန်လွန်ခဲ့သော အချိန်
-- _Sys_ - Kernel code ကို ရန်းရာတွင် CPU ၌ ကုန်လွန်ခဲ့သော အချိန်
+- _User_ - User code ကို runရာတွင် CPU ၌ ကုန်လွန်ခဲ့သော အချိန်
+- _Sys_ - Kernel code ကို runရာတွင် CPU ၌ ကုန်လွန်ခဲ့သော အချိန်
 
-ဥပမာ HTTP request ပြုလုပ်သော Command တစ်ခု၏ ရှေ့တွင် [`time`](https://www.man7.org/linux/man-pages/man1/time.1.html) ထည့်၍ ရန်းကြည့်ပါ။ လိုင်းနှေးသောအခါ အောက်ပါအတိုင်း Output ရရှိနိုင်ပါသည်။ ဤနေရာတွင် Request ပြီးဆုံးရန် ၂ စက္ကန့်ကျော် ကြာမြင့်ခဲ့သော်လည်း Process သည် CPU user time 15ms နှင့် Kernel CPU time 12ms သာ ကုန်လွန်ခဲ့သည်။
+ဥပမာ HTTP request ပြုလုပ်သော Command တစ်ခု၏ ရှေ့တွင် [`time`](https://www.man7.org/linux/man-pages/man1/time.1.html) ထည့်၍ runကြည့်ပါ။ လိုင်းနှေးသောအခါ အောက်ပါအတိုင်း Output ရရှိနိုင်ပါသည်။ ဤနေရာတွင် Request ပြီးဆုံးရန် ၂ စက္ကန့်ကျော် ကြာမြင့်ခဲ့သော်လည်း Process သည် CPU user time 15ms နှင့် Kernel CPU time 12ms သာ ကုန်လွန်ခဲ့သည်။
 
 ```bash
 $ time curl https://missing.csail.mit.edu &> /dev/null
@@ -339,7 +339,7 @@ if __name__ == '__main__':
     get_urls()
 ```
 
-Python ၏ `cProfile` ကို သုံးပါက Output စာကြောင်း ၂၅၀၀ ကျော် ရရှိမည် ဖြစ်သည်။ [`line_profiler`](https://github.com/pyutils/line_profiler) ကို ရန်းလိုက်ပါက စာကြောင်းတစ်ကြောင်းစီ၏ အချိန်ကို တွေ့ရမည် -
+Python ၏ `cProfile` ကို သုံးပါက Output စာကြောင်း ၂၅၀၀ ကျော် ရရှိမည် ဖြစ်သည်။ [`line_profiler`](https://github.com/pyutils/line_profiler) ကို runလိုက်ပါက စာကြောင်းတစ်ကြောင်းစီ၏ အချိန်ကို တွေ့ရမည် -
 
 ```bash
 $ kernprof -l -v a.py
@@ -367,7 +367,7 @@ C သို့မဟုတ် C++ ကဲ့သို့သော ဘာသာစ
 Memory debugging အတွက် [Valgrind](https://valgrind.org/) ကဲ့သို့သော Tool များကို အသုံးပြု၍ Memory leaks များကို ရှာဖွေနိုင်ပါသည်။
 
 Python ကဲ့သို့ Garbage collected ဘာသာစကားများတွင်လည်း Memory profiler ကို သုံးရန် အသုံးဝင်ပါသည်၊ အကြောင်းမှာ Memory ထဲရှိ Object များသို့ Pointer များ ရှိနေသရွှေ့ Garbage collection ပြုလုပ်မည် မဟုတ်သောကြောင့် ဖြစ်သည်။
-အောက်တွင် [memory-profiler](https://pypi.org/project/memory-profiler/) ဖြင့် ရန်းထားသော နမူနာ ဖြစ်ပါသည် -
+အောက်တွင် [memory-profiler](https://pypi.org/project/memory-profiler/) ဖြင့် runထားသော နမူနာ ဖြစ်ပါသည် -
 
 ```python
 @profile
@@ -401,7 +401,7 @@ Debugging အတွက် `strace` ကဲ့သို့ပင်၊ Profile ပ
 
 - `perf list` - perf ဖြင့် ခြေရာခံနိုင်သော Event စာရင်းများကို ပြသည်
 - `perf stat COMMAND ARG1 ARG2` - Process သို့မဟုတ် Command နှင့် သက်ဆိုင်သော Event ရေတွက်မှုများကို ရယူသည်
-- `perf record COMMAND ARG1 ARG2` - Command ၏ ရန်းမှုကို မှတ်တမ်းတင်၍ `perf.data` ဖိုင်ထဲ သိမ်းဆည်းသည်
+- `perf record COMMAND ARG1 ARG2` - Command ၏ runမှုကို မှတ်တမ်းတင်၍ `perf.data` ဖိုင်ထဲ သိမ်းဆည်းသည်
 - `perf report` - `perf.data` ရှိ အချက်အလက်များကို ပြသပေးသည်
 
 
@@ -460,7 +460,7 @@ Browser များတွင်လည်း စွမ်းဆောင်ရ�
 
 ## Debugging
 1. Linux တွင် `journalctl` သို့မဟုတ် macOS တွင် `log show` ကို သုံး၍ လွန်ခဲ့သော နေ့ရက်အတွင်း Superuser ဝင်ရောက်မှုများကို ကြည့်ပါ။
-မရှိပါက `sudo ls` ရန်းပြီး ပြန်စစ်ပါ။
+မရှိပါက `sudo ls` runပြီး ပြန်စစ်ပါ။
 
 1. `pdb` [သင်ခန်းစာ](https://github.com/spiside/pdb-tutorial) ကို ပြုလုပ်ပါ။ [ဤဆောင်းပါး](https://realpython.com/python-debugging-pdb) ကိုလည်း ဖတ်ပါ။
 
@@ -502,11 +502,11 @@ Browser များတွင်လည်း စွမ်းဆောင်ရ�
        print(eval("fib9()"))
    ```
 
-   `pycallgraph graphviz -- ./fib.py` ဖြင့် ရန်း၍ `pycallgraph.png` ကို စစ်ပါ။ `fib0` ကို ဘယ်နှစ်ကြိမ် ခေါ်သနည်း။ Comment ဖြုတ်၍ ပြန်ရန်းပါ၊ အခု ဘယ်နှစ်ကြိမ် ခေါ်သနည်း။
+   `pycallgraph graphviz -- ./fib.py` ဖြင့် run၍ `pycallgraph.png` ကို စစ်ပါ။ `fib0` ကို ဘယ်နှစ်ကြိမ် ခေါ်သနည်း။ Comment ဖြုတ်၍ ပြန်runပါ၊ အခု ဘယ်နှစ်ကြိမ် ခေါ်သနည်း။
 
-1. Port 4444 တွင် `python -m http.server 4444` စတင် ရန်းပါ။ အခြား Terminal မှ `lsof | grep LISTEN` ဖြင့် စစ်ပါ၊ PID ကို ရှာပြီး `kill <PID>` ဖြင့် ပိတ်ပါ။
+1. Port 4444 တွင် `python -m http.server 4444` စတင် runပါ။ အခြား Terminal မှ `lsof | grep LISTEN` ဖြင့် စစ်ပါ၊ PID ကို ရှာပြီး `kill <PID>` ဖြင့် ပိတ်ပါ။
 
-1. `stress -c 3` ရန်းပြီး `htop` ဖြင့် ကြည့်ပါ။ `taskset --cpu-list 0,2 stress -c 3` ရန်းပြီး ကြည့်ပါ။ `man taskset` ကို ဖတ်ပါ။
-စိန်ခေါ်မှု- [`cgroups`](https://www.man7.org/linux/man-pages/man7/cgroups.7.html) ကို သုံး၍ ပြုလုပ်ပါ။ `stress -m` memory စားသုံးမှုကို ကန့်သတ်ကြည့်ပါ။
+1. `stress -c 3` runပြီး `htop` ဖြင့် ကြည့်ပါ။ `taskset --cpu-list 0,2 stress -c 3` runပြီး ကြည့်ပါ။ `man taskset` ကို ဖတ်ပါ။
+စိန်ခေါ်မှု- [`cgroups`](https://www.man7.org/linux/man-pages/man7/cgroups.7.html) ကို သုံး၍ ပြုလုပ်ပါ။ `stress -m` ဖြင့် memory စားသုံးမှုကို ကန့်သတ်ကြည့်ပါ။
 
-1. (အဆင့်မြင့်) `curl ipinfo.io` ရန်းပြီး Wireshark ဖြင့် Packet များကို ဖမ်းယူကြည့်ပါ (`http` filter သုံးပါ)။
+1. (အဆင့်မြင့်) `curl ipinfo.io` runပြီး Wireshark ဖြင့် Packet များကို ဖမ်းယူကြည့်ပါ (`http` filter သုံးပါ)။

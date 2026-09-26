@@ -11,7 +11,7 @@ video:
 
 # စိတ်ဓာတ်တက်ကြွမှုနှင့် ရည်ရွယ်ချက် (Motivation)
 
-ဤသင်တန်းသည် [hacker](https://en.wikipedia.org/wiki/Hacker_culture) tool များအကြောင်း သင်ကြားပေးခြင်း ဖြစ်ပြီး [hacker](https://en.wikipedia.org/wiki/Security_hacker) tool များအကြောင်း မဟုတ်ပါ။
+ဤသင်တန်းသည် ဖန်တီးတီထွင်သူများ၏ [hacker culture](https://en.wikipedia.org/wiki/Hacker_culture) tool များအကြောင်း သင်ကြားပေးခြင်း ဖြစ်ပြီး လုံခြုံရေးဖောက်ထွင်းသည့် [security hacker](https://en.wikipedia.org/wiki/Security_hacker) tool များအကြောင်း မဟုတ်ပါ။
 
 MIT သင်တန်းများတွင် ဤအကြောင်းအရာများကို အသေးစိတ် သင်ကြားပေးခြင်း မရှိပါ။ မိမိ၏ tool များကို ကျွမ်းကျင်စွာ အသုံးပြုနိုင်ခြင်းသည် အလွန်ပင် အကျိုးကျေးဇူး ကြီးမားလှသည်—ယင်းက သင်၏ အချိန်များစွာကို သက်သာစေမည် ဖြစ်သည် (အကျိုးအမြတ် ပြန်ရသည့် အချိန်မှာလည်း အလွန် တိုတောင်းပါသည်)။
 

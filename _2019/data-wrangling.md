@@ -1,6 +1,6 @@
 ---
 layout: lecture
-title: "Data Wrangling"
+title: "ဒေတာ ပြုပြင်စီမံခြင်း (Data Wrangling)"
 presenter: Jon
 date: 2019-01-17
 order: 2

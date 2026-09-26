@@ -1,6 +1,6 @@
 ---
 layout: lecture
-title: "Potpourri"
+title: "အထွေထွေ ခေါင်းစဉ်များ (Potpourri)"
 description: >
   Keyboard remapping, daemons, backups, APIs အပါအဝင် အသုံးဝင်သော ခေါင်းစဉ် အမျိုးအစားများစွာ အကြောင်း လေ့လာပါ။
 thumbnail: /static/assets/thumbnails/2020/lec10.png
@@ -57,12 +57,12 @@ Programmer တစ်ယောက်အဖြစ် သင်၏ ကီးဘု�
 ## Daemons
 
 Daemons အယူအဆကို စာလုံးသစ် ဖြစ်နေသည့်တိုင် သတိပြုမိပေမည်။
-ကွန်ပျူတာ အများစုတွင် User က စတင် ရန်းသည်ကို မစောင့်ဘဲ Background တွင် အမြဲတမ်း ရန်းနေသော Process အစဉ်လိုက်များ ရှိကြပါသည်။
-ဤ Process များကို Daemons ဟု ခေါ်ဆိုပြီး ရန်းနေသော ပရိုဂရမ် အမည်များသည် အဆုံးတွင် `d` ဖြင့် ဆုံးလေ့ ရှိကြသည်။
+ကွန်ပျူတာ အများစုတွင် User က စတင် runသည်ကို မစောင့်ဘဲ Background တွင် အမြဲတမ်း runနေသော Process များ ရှိကြပါသည်။
+ဤ Process များကို Daemons ဟု ခေါ်ဆိုပြီး runနေသော ပရိုဂရမ် အမည်များသည် အဆုံးတွင် `d` ဖြင့် ဆုံးလေ့ ရှိကြသည်။
 ဥပမာ SSH daemon ဖြစ်သော `sshd` သည် SSH request များကို နားထောင်ပြီး Remote user တွင် လော့ဂ်အင် ဝင်ရန် Credentials ရှိမရှိ စစ်ဆေးပေးသော ပရိုဂရမ် ဖြစ်ပါသည်။
 
 Linux တွင် `systemd` (system daemon) သည် Daemon process များကို စီမံရန် အသုံးအများဆုံး ဖြေရှင်းချက် ဖြစ်သည်။
-ရန်းနေသော Daemon စာရင်းကို ကြည့်ရန် `systemctl status` ကို ရန်းနိုင်ပါသည်။
+runနေသော Daemon စာရင်းကို ကြည့်ရန် `systemctl status` ကို runနိုင်ပါသည်။
 `systemctl` command ဖြင့် Service များကို `enable`, `disable`, `start`, `stop`, `restart` သို့မဟုတ် `status` စစ်ဆေးနိုင်ပါသည်။
 
 `systemd` တွင် Daemon အသစ်များ ပြင်ဆင်သတ်မှတ်ရန် လွယ်ကူသော Interface ရှိပါသည်။ အောက်တွင် Python app အတွက် Daemon နမူနာ ဖြစ်ပါသည် -
@@ -84,7 +84,7 @@ Restart=on-failure
 WantedBy=multi-user.target
 ```
 
-သီးခြား ကြိမ်နှုန်းဖြင့် ပရိုဂရမ် ရန်းလိုပါက Daemon အသစ် ဖန်တီးစရာ မလိုဘဲ စနစ်တွင် ပါဝင်ပြီးသား ဖြစ်သော [`cron`](https://www.man7.org/linux/man-pages/man8/cron.8.html) ကို သုံးနိုင်ပါသည်။
+သီးခြား ကြိမ်နှုန်းဖြင့် ပရိုဂရမ် runလိုပါက Daemon အသစ် ဖန်တီးစရာ မလိုဘဲ စနစ်တွင် ပါဝင်ပြီးသား ဖြစ်သော [`cron`](https://www.man7.org/linux/man-pages/man8/cron.8.html) ကို သုံးနိုင်ပါသည်။
 
 ## FUSE
 
@@ -125,10 +125,10 @@ API အများစုသည် သပ်ရပ်သော URL ပုံစ�
 
 ## Common command-line flags/patterns
 
-Command-line tool မျာတွင် အသုံးများသော Flag များမှာ -
+Command-line tool များတွင် အသုံးများသော Flag များမှာ -
 
  - `--help`: အတိုချုပ် ညွှန်ကြားချက်များ ပြရန်။
- - "dry run" flag: ပြောင်းလဲမည့် အရာများကို ရန်းမထားဘဲ ပြသပေးရန်။
+ - "dry run" flag: ပြောင်းလဲမည့် အရာများကို runမထားဘဲ ပြသပေးရန်။
  - `--version` သို့မဟုတ် `-V`: Version နံပါတ် ပြရန်။
  - `--verbose` သို့မဟုတ် `-v`: အသေးစိတ် Output များ ပြရန်။
  - `-`: File name နေရာတွင် standard input သို့မဟုတ် standard output အဖြစ် သတ်မှတ်ရန်။

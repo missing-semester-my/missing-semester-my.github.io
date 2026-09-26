@@ -145,7 +145,7 @@ Asymmetric-key cryptography သည် အလွန် ကောင်းမွ�
 
 ## SSH
 
-`ssh-keygen` ရန်းသည့်အခါ Asymmetric key pair (`public_key, private_key`) ထုတ်ပေးသည်။ `ssh-keygen` က Passphrase တောင်းပြီး KDF မှတဆင့် Key ထုတ်ယူကာ Private key ကို Disc ပေါ်တွင် Encrypt လုပ်၍ သိမ်းသည်။
+`ssh-keygen` runသည့်အခါ Asymmetric key pair (`public_key, private_key`) ထုတ်ပေးသည်။ `ssh-keygen` က Passphrase တောင်းပြီး KDF မှတဆင့် Key ထုတ်ယူကာ Private key ကို Disc ပေါ်တွင် Encrypt လုပ်၍ သိမ်းသည်။
 
 Server တွင် Client ၏ Public key ရှိသည့်အခါ (`.ssh/authorized_keys` တွင်)၊ Client သည် Challenge-response မှတဆင့် Asymmetric signature ဖြင့် မိမိ ပိုင်ဆိုင်ကြောင်း သက်သေပြ၍ လော့ဂ်အင် ဝင်ရောက်သည်။
 

@@ -51,8 +51,8 @@ special: true
 
 ## When do I use Python versus a Bash scripts versus some other language?
 
-ယေဘုယျအားဖြင့် Bash script သည် Command အနည်းငယ် ရန်းမည့် ရိုးရှင်းသော အလုပ်များအတွက် အသုံးဝင်ပါသည်။ ကြီးမားသော ပရိုဂရမ်များအတွက် Bash တွင် အားနည်းချက်များ ရှိပါသည် -
-- အခရာ စာလုံးများ (spaces) ပါပါက Bug ဖြစ်ပေါ်နိုင်ခြင်း။
+ယေဘုယျအားဖြင့် Bash script သည် Command အနည်းငယ် runမည့် ရိုးရှင်းသော အလုပ်များအတွက် အသုံးဝင်ပါသည်။ ကြီးမားသော ပရိုဂရမ်များအတွက် Bash တွင် အားနည်းချက်များ ရှိပါသည် -
+- ကွက်လပ်များ (spaces) ပါပါက Bug ဖြစ်ပေါ်နိုင်ခြင်း။
 - Code များကို ပြန်လည် အသုံးပြုရန် ခက်ခဲခြင်း (Library အယူအဆ မရှိခြင်း)။
 - `$?` သို့မဟုတ် `$@` ကဲ့သို့သော Magic string များကို သုံးရခြင်း။
 
@@ -60,12 +60,12 @@ special: true
 
 ## What is the difference between `source script.sh` and `./script.sh`
 
-`source` သည် လက်ရှိ Bash session တွင် Command များကို ရန်းပေးသဖြင့် Directory ပြောင်းခြင်း၊ Function သတ်မှတ်ခြင်းတို့သည် လက်ရှိ Session တွင် ကျန်ရစ်မည် ဖြစ်သည်။ `./script.sh` မူ Bash session အသစ်တစ်ခု ဖွင့်၍ ရန်းသဖြင့် Session ပြီးပါက မူလနေရာသို့ ပြန်ရောက်မည် ဖြစ်သည်။
+`source` သည် လက်ရှိ Bash session တွင် Command များကို runပေးသဖြင့် Directory ပြောင်းခြင်း၊ Function သတ်မှတ်ခြင်းတို့သည် လက်ရှိ Session တွင် ကျန်ရစ်မည် ဖြစ်သည်။ `./script.sh` မူ Bash session အသစ်တစ်ခု ဖွင့်၍ runသဖြင့် Session ပြီးပါက မူလနေရာသို့ ပြန်ရောက်မည် ဖြစ်သည်။
 
 ## What are the places where various packages and tools are stored and how does referencing them work? What even is `/bin` or `/lib`?
 
 - `/bin` - Essential command binaries
-- `/sbin` - Root မှ ရန်းမည့် Essential system binaries
+- `/sbin` - Root မှ runမည့် Essential system binaries
 - `/dev` - Device files
 - `/etc` - System-wide configuration files
 - `/home` - User များ၏ Home directories
@@ -103,7 +103,7 @@ special: true
 
 ## What is the difference between Docker and a Virtual Machine?
 
-Virtual machine သည် Kernel အပါအဝင် OS တစ်ခုလုံးကို ရန်းပေးသည်။ Docker (Containers) မူ Host စနစ်၏ Kernel ကို မျှဝေ သုံးစွဲသဖြင့် Overhead နည်းပါးသည်။
+Virtual machine သည် Kernel အပါအဝင် OS တစ်ခုလုံးကို runပေးသည်။ Docker (Containers) ကမူ Host စနစ်၏ Kernel ကို မျှဝေ သုံးစွဲသဖြင့် Overhead နည်းပါးသည်။
 
 ## What are the advantages and disadvantages of each OS and how can we choose between them (e.g. choosing the best Linux distribution for our purposes)?
 

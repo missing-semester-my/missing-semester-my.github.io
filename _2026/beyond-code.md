@@ -1,6 +1,6 @@
 ---
 layout: lecture
-title: "ကုဒ်ရေးသားခြင်းထက် ကျော်လွန်၍"
+title: "Beyond the code (ကုဒ်ရေးသားခြင်းထက် ကျော်လွန်၍)"
 description: >
   Documentation ရေးသားခြင်း၊ အိုးပင်းဆော့စ် အသိုင်းအဝိုင်း ကျင့်ဝတ်များ၊ နှင့် AI အသုံးပြုမှု ကျင့်ဝတ်များ အပါအဝင် မရှိမဖြစ် လိုအပ်သော ဆော့ဖ်စကေးလ်များ (soft skills) အကြောင်း လေ့လာပါ။
 thumbnail: /static/assets/thumbnails/2026/lec8.png
