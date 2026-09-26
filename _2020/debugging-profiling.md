@@ -71,7 +71,7 @@ UNIX စနစ်များတွင် ပရိုဂရမ်များ�
 နောက်ပိုင်းတွင် စနစ်များသည် **system log** ကို စတင် အသုံးပြုလာကြပြီး သင်၏ Log စာတို အားလုံး ရောက်ရှိရာ နေရာ ဖြစ်လာပါသည်။
 Linux စနစ် အများစု (အားလုံးတော့ မဟုတ်ပါ) သည် သင်၏ စနစ်ရှိ Service များ ဖွင့်ထားခြင်း၊ ရန်းနေခြင်း အစရှိသည်တို့ကို ထိန်းချုပ်သော System Daemon ဖြစ်သည့် `systemd` ကို အသုံးပြုကြသည်။
 `systemd` သည် Log များကို `/var/log/journal` အောက်တွင် သီးသန့် Format ဖြင့် ထားရှိပြီး [`journalctl`](https://www.man7.org/linux/man-pages/man1/journalctl.1.html) Command ကို အသုံးပြု၍ မက်ဆေ့ဂျ်များကို ပြသနိုင်ပါသည်။
-အလားတူ macOS တွင် `/var/log/system.log` ရှိနေဆဲ ဖြစ်သော်လည်း ကိရိယာ အမြောက်အမြားသည် System log ကို သုံးလာကြပြီး [`log show`](https://www.manpagez.com/man/1/log/) ဖြင့် ကြည့်ရှုနိုင်ပါသည်။
+အလားတူ macOS တွင် `/var/log/system.log` ရှိနေဆဲ ဖြစ်သော်လည်း tools အမြောက်အမြားသည် System log ကို သုံးလာကြပြီး [`log show`](https://www.manpagez.com/man/1/log/) ဖြင့် ကြည့်ရှုနိုင်ပါသည်။
 UNIX စနစ် အများစုတွင် Kernel log များကို ကြည့်ရှုရန် [`dmesg`](https://www.man7.org/linux/man-pages/man1/dmesg.1.html) Command ကိုလည်း အသုံးပြုနိုင်ပါသည်။
 
 System log များအောက်တွင် Logging ပြုလုပ်ရန် [`logger`](https://www.man7.org/linux/man-pages/man1/logger.1.html) ဟူသော Shell program ကို အသုံးပြုနိုင်ပါသည်။
