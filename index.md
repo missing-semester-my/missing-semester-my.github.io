@@ -92,7 +92,7 @@ MIT အပြင်ဘက်မှ လေ့လာသူများလည်း
 
 - [Arabic](https://missing-semester-ar.github.io/)
 - [Bengali](https://missing-semester-bn.github.io/)
-- [Myanmar](https://github.com/missing-semester-my)
+- [Burmese](https://github.com/missing-semester-my)
 - [Chinese (Simplified)](https://missing-semester-cn.github.io/)
 - [Chinese (Traditional, Taiwan)](https://missing-semester-tw.github.io/)
 - [German](https://missing-semester-de.github.io/)
