@@ -13,6 +13,7 @@
   - Keep "toolbox" as original English (`toolbox`, NEVER `"ကိရိယာအိတ်"`).
   - Keep "interface" / "user interface" as original English or `"interface (မျက်နှာပြင်)"` (NEVER `"အතුරුအပြင်"`).
   - Keep "bug" / "bugs" as original English (`bug` / `bugs` or `"bug (အမှား)"`, NEVER translate literally as `"ပိုးကောင်"`).
+  - Standardize "Code" / "code": Use **`Code`** or **`ကုဒ်`** (NEVER `"ကုတ်"`, `"ကုတ်ဒ်"`, or `"ကိုဒ်"`).
 
   - Translate "independent lectures" as `"သီးခြားစီ လေ့လာနိုင်သော ခေါင်းစဉ်များ"` (NEVER `"ကင်းလွတ်"`).
 
