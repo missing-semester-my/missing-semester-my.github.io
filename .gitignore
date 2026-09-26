@@ -4,4 +4,4 @@ __pycache__/
 .jekyll-metadata
 my/__pycache__/
 vendor/
-ebook/
+ebook/build/

@@ -1,0 +1,4 @@
+build/
+assets/qrcodes/
+assets/thumbnails/
+__pycache__/

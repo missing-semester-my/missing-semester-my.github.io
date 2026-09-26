@@ -1,0 +1,834 @@
+/* Premium PDF Paged Media Stylesheet - A5 Print & Digital Edition */
+
+@page {
+  size: A5 portrait;
+  margin: 20mm 14mm 18mm 14mm;
+  @top-left {
+    content: "FOSS Myanmar";
+    font-family: "Noto Sans Myanmar", sans-serif;
+    font-size: 8.5pt;
+    color: #64748b;
+    font-weight: normal;
+  }
+  @top-right {
+    content: "The Missing Semester of Your CS Education - Burmese";
+    font-family: "Noto Sans Myanmar", sans-serif;
+    font-size: 8.5pt;
+    color: #64748b;
+    font-weight: normal;
+  }
+  @bottom-right {
+    content: counter(page);
+    font-family: "Noto Sans Myanmar", sans-serif;
+    font-size: 9pt;
+    font-weight: normal;
+    color: #64748b;
+  }
+  @bottom-left {
+    content: "https://missing-semester-my.github.io/";
+    font-family: "Noto Sans Myanmar", sans-serif;
+    font-size: 8pt;
+    color: #64748b;
+    font-weight: normal;
+  }
+}
+
+/* Page 1 (Cover Page) Header & Footer Suppression */
+@page :first {
+  margin: 0;
+  @top-left { content: normal; }
+  @top-right { content: normal; }
+  @bottom-right { content: normal; }
+  @bottom-left { content: normal; }
+}
+
+/* Hide Pandoc Default Plain Title Header Block */
+header#title-block-header {
+  display: none !important;
+}
+
+body {
+  font-family: "Noto Sans Myanmar", "Pyidaungsu", "Padauk", sans-serif;
+  line-height: 1.85;
+  font-size: 11.5pt;
+  color: #0f172a;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+/* Content Headings & Layout */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Noto Sans Myanmar", "Pyidaungsu", sans-serif;
+  color: #0f172a;
+  line-height: 1.45;
+  page-break-after: avoid;
+  page-break-inside: avoid;
+  font-weight: 700;
+  text-align: left;
+}
+
+h1 {
+  font-size: 20pt;
+  color: #0f172a;
+  background-color: #f8fafc;
+  border-left: 6px solid #2563eb;
+  border-bottom: 2px solid #e2e8f0;
+  padding: 4mm 6mm;
+  border-radius: 4px;
+  margin-top: 8mm;
+  margin-bottom: 6mm;
+  page-break-before: always;
+}
+
+h1:first-of-type {
+  page-break-before: avoid;
+}
+
+h2 {
+  font-size: 15.5pt;
+  color: #1e3a8a;
+  border-bottom: 2px solid #cbd5e1;
+  padding-bottom: 2.5mm;
+  margin-top: 7mm;
+  margin-bottom: 4.5mm;
+}
+
+h3 {
+  font-size: 13.5pt;
+  color: #2563eb;
+  margin-top: 6mm;
+  margin-bottom: 4mm;
+}
+
+p {
+  margin-top: 4mm;
+  margin-bottom: 4mm;
+  text-align: left;
+}
+
+ul, ol {
+  margin-top: 3.5mm;
+  margin-bottom: 3.5mm;
+  padding-left: 6mm;
+  text-align: left;
+}
+
+li {
+  margin-bottom: 2mm;
+  line-height: 1.8;
+}
+
+a {
+  color: #2563eb;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.ext-url-print {
+  font-size: 9pt;
+  color: #64748b;
+  font-weight: normal;
+}
+
+.status-badge-pill {
+  display: inline-block;
+  background-color: #2563eb;
+  color: #ffffff;
+  font-size: 8.5pt;
+  font-weight: bold;
+  padding: 2.5pt 7pt;
+  border-radius: 4px;
+  margin: 2pt 4pt;
+}
+
+/* Code & Terminal Blocks */
+code {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Courier, monospace;
+  font-size: 10pt;
+  background-color: #f1f5f9;
+  color: #0f172a;
+  padding: 2pt 5pt;
+  border-radius: 3px;
+  border: 1px solid #e2e8f0;
+}
+
+pre {
+  background-color: #0f172a;
+  color: #f8fafc;
+  padding: 4.5mm 5.5mm;
+  margin: 4.5mm 0;
+  border-radius: 6px;
+  font-size: 9.5pt;
+  line-height: 1.5;
+  page-break-inside: avoid;
+  white-space: pre-wrap;
+  word-break: break-all;
+  border: 1px solid #334155;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+pre code {
+  background-color: transparent;
+  color: inherit;
+  padding: 0;
+  border: none;
+}
+
+/* Blockquotes & Callouts */
+blockquote {
+  border-left: 4.5pt solid #2563eb;
+  background-color: #f8fafc;
+  margin: 4.5mm 0;
+  padding: 3.5mm 5.5mm;
+  color: #1e293b;
+  border-radius: 0 6px 6px 0;
+  page-break-inside: avoid;
+  text-align: left;
+}
+
+/* Video Reference Card */
+.video-card {
+  border: 1.5px solid #cbd5e1;
+  background-color: #f8fafc;
+  border-radius: 8px;
+  padding: 4.5mm 5.5mm;
+  margin: 5mm 0;
+  page-break-inside: avoid;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.video-card-header {
+  border-bottom: 1px solid #e2e8f0;
+  padding-bottom: 2.5mm;
+  margin-bottom: 3.5mm;
+}
+
+.video-badge {
+  display: inline-block;
+  background-color: #ef4444;
+  color: #ffffff;
+  font-size: 8pt;
+  font-weight: bold;
+  padding: 2.5pt 6.5pt;
+  border-radius: 4px;
+}
+
+.video-title {
+  margin-top: 2mm;
+  margin-bottom: 1mm;
+  font-size: 13pt;
+  color: #0f172a;
+}
+
+.video-preview-container {
+  width: 100%;
+  margin-bottom: 3.5mm;
+}
+
+.video-thumbnail {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+}
+
+.video-desc {
+  font-size: 10pt;
+  color: #475569;
+  margin-top: 0;
+  text-align: left;
+}
+
+.video-qr-block {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  gap: 4mm !important;
+  margin-top: 3.5mm !important;
+  background-color: #ffffff !important;
+  padding: 3.5mm 4.5mm !important;
+  border-radius: 6px !important;
+  border: 1px solid #cbd5e1 !important;
+  overflow: hidden !important;
+}
+
+.video-qr-code {
+  width: 72px !important;
+  height: 72px !important;
+  min-width: 72px !important;
+  flex-shrink: 0 !important;
+  float: none !important;
+  margin: 0 !important;
+  border-radius: 4px;
+}
+
+.video-url-details {
+  flex: 1 1 auto !important;
+  min-width: 0 !important;
+  word-break: break-all !important;
+  overflow-wrap: anywhere !important;
+}
+
+.qr-label {
+  display: block;
+  font-size: 9pt;
+  color: #0f172a;
+  font-weight: bold;
+  margin-bottom: 2pt;
+}
+
+.video-url {
+  font-size: 8.5pt;
+  word-break: break-all;
+  color: #2563eb;
+}
+
+/* Video Demo Box (About / Motivation Video Demos with QR) */
+.video-demo-box {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  gap: 4.5mm !important;
+  margin-top: 4mm !important;
+  margin-bottom: 5mm !important;
+  padding: 3.5mm 4.5mm !important;
+  background-color: #f1f5f9 !important;
+  border: 1.5px solid #cbd5e1 !important;
+  border-radius: 8px !important;
+  page-break-inside: avoid !important;
+  overflow: hidden !important;
+}
+
+.video-demo-qr-col {
+  flex-shrink: 0 !important;
+}
+
+.video-demo-qr-img {
+  width: 65px !important;
+  height: 65px !important;
+  min-width: 65px !important;
+  border-radius: 4px !important;
+  border: 1px solid #cbd5e1 !important;
+}
+
+.video-demo-info-col {
+  flex: 1 1 auto !important;
+  min-width: 0 !important;
+}
+
+.video-demo-header {
+  font-size: 10pt !important;
+  color: #0f172a !important;
+  margin-bottom: 2pt !important;
+}
+
+.video-demo-subtext {
+  font-size: 8.5pt !important;
+  color: #64748b !important;
+  margin-bottom: 2pt !important;
+}
+
+.video-demo-link a {
+  font-size: 8.5pt !important;
+  word-break: break-all !important;
+  color: #2563eb !important;
+}
+
+/* External Links Appendix Table */
+.lecture-links-appendix {
+  margin-top: 7mm;
+  margin-bottom: 5mm;
+  padding: 3.5mm 4.5mm;
+  background-color: #f8fafc;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 8px;
+  page-break-inside: avoid;
+}
+
+.links-appendix-title {
+  margin-top: 0;
+  margin-bottom: 3mm;
+  font-size: 11pt;
+  color: #1e3a8a;
+  border-bottom: 1px solid #cbd5e1;
+  padding-bottom: 2mm;
+}
+
+.links-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 8.5pt;
+  line-height: 1.4;
+}
+
+.links-table th {
+  background-color: #e2e8f0;
+  color: #0f172a;
+  padding: 2mm 2.5mm;
+  font-weight: bold;
+  font-size: 8pt;
+  border: 1px solid #cbd5e1;
+  text-align: left;
+}
+
+.links-table td {
+  padding: 2mm 2.5mm;
+  border: 1px solid #e2e8f0;
+  vertical-align: middle;
+}
+
+.links-table tr:nth-child(even) {
+  background-color: #ffffff;
+}
+
+.links-table tr:nth-child(odd) {
+  background-color: #f1f5f9;
+}
+
+.col-label {
+  font-weight: 600;
+  color: #0f172a;
+  word-wrap: break-word;
+}
+
+.col-url {
+  word-break: break-all;
+}
+
+.appendix-link {
+  color: #2563eb;
+  text-decoration: underline;
+  font-size: 8pt;
+}
+
+.col-qr {
+  text-align: center;
+}
+
+.micro-qr {
+  width: 38px;
+  height: 38px;
+  display: block;
+  margin: 0 auto;
+  border: 1px solid #cbd5e1;
+  border-radius: 3px;
+  background-color: #ffffff;
+}
+
+
+/* ==================================================
+   PAGE 1 COVER PAGE STYLING (LARGE, BOLD & PROMINENT)
+   ================================================== */
+.pdf-cover-page {
+  page-break-before: avoid !important;
+  page-break-after: always !important;
+  break-after: page !important;
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+  background: linear-gradient(145deg, #0b1329 0%, #1e293b 60%, #0f172a 100%) !important;
+  color: #ffffff !important;
+  padding: 16mm 14mm 14mm 14mm !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  text-align: center !important;
+}
+
+.pdf-cover-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pdf-cover-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1.5px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 4mm;
+  margin-bottom: 16mm !important; /* Doubled top gap before logo */
+}
+
+.pdf-cover-badge {
+  font-size: 10pt !important;
+  letter-spacing: 2px !important;
+  font-weight: 800 !important;
+  color: #38bdf8 !important;
+  text-transform: uppercase;
+}
+
+.pdf-cover-year {
+  font-size: 10pt !important;
+  letter-spacing: 2px !important;
+  font-weight: 800 !important;
+  background-color: #2563eb !important;
+  color: #ffffff !important;
+  padding: 4pt 12pt !important;
+  border-radius: 14px !important;
+}
+
+/* Official Logo Box (Positioned BEFORE Title with doubled top gap) */
+.pdf-cover-logo-box {
+  margin: 16mm auto 8mm auto !important;
+  padding-top: 4mm !important;
+  text-align: center !important;
+}
+
+.pdf-cover-logo {
+  width: 95px !important;
+  height: 95px !important;
+  border-radius: 20px !important;
+  border: 2.5px solid rgba(255, 255, 255, 0.35) !important;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.6) !important;
+  display: inline-block !important;
+}
+
+.pdf-cover-title-group {
+  margin-top: 4mm !important;
+  margin-bottom: 10mm !important;
+}
+
+.pdf-cover-page h1,
+.pdf-cover-main-title {
+  font-size: 28pt !important;
+  line-height: 1.25 !important;
+  font-weight: 900 !important;
+  color: #ffffff !important;
+  background: transparent !important;
+  background-color: transparent !important;
+  border: none !important;
+  border-left: none !important;
+  border-bottom: none !important;
+  padding: 0 !important;
+  margin: 0 0 5mm 0 !important;
+  box-shadow: none !important;
+  page-break-before: avoid !important;
+  text-shadow: 0 4px 16px rgba(0, 0, 0, 0.6);
+  text-align: center !important;
+}
+
+.pdf-cover-edition-tag {
+  display: inline-block;
+  font-size: 13pt !important;
+  font-weight: 700 !important;
+  color: #38bdf8 !important;
+  background: rgba(56, 189, 248, 0.15) !important;
+  border: 1.5px solid rgba(56, 189, 248, 0.4) !important;
+  padding: 5pt 16pt !important;
+  border-radius: 24px !important;
+}
+
+.pdf-cover-section {
+  width: 100% !important;
+  background: rgba(255, 255, 255, 0.05) !important;
+  border: 1.5px solid rgba(255, 255, 255, 0.18) !important;
+  border-radius: 14px !important;
+  padding: 5.5mm 6.5mm !important;
+  margin: 5mm 0 !important;
+  text-align: center !important;
+}
+
+.pdf-cover-section-badge {
+  font-size: 10pt !important;
+  letter-spacing: 2px !important;
+  font-weight: 800 !important;
+  color: #38bdf8 !important;
+  margin-bottom: 2.5mm !important;
+  text-transform: uppercase !important;
+}
+
+.pdf-cover-credits-main {
+  font-size: 13.5pt !important;
+  font-weight: 800 !important;
+  color: #ffffff !important;
+  margin-bottom: 2mm !important;
+}
+
+.pdf-cover-affiliation {
+  font-size: 11.5pt !important;
+  font-weight: 600 !important;
+  color: #cbd5e1 !important;
+  margin-bottom: 2.5mm !important;
+}
+
+.pdf-cover-url-row {
+  font-size: 11pt !important;
+  color: #94a3b8 !important;
+}
+
+.url-label {
+  font-weight: 800 !important;
+  color: #cbd5e1 !important;
+  margin-right: 1.5mm !important;
+}
+
+.pdf-cover-link {
+  color: #60a5fa !important;
+  font-weight: 800 !important;
+  font-size: 11.5pt !important;
+  text-decoration: underline !important;
+}
+
+.pdf-cover-footer {
+  width: 100% !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.12) !important;
+  padding-top: 4mm !important;
+  margin-top: 4mm !important;
+  font-size: 9pt !important;
+  font-weight: 400 !important;
+  color: #64748b !important;
+  text-align: center !important;
+}
+
+.pdf-cover-footer .pdf-cover-section-badge {
+  font-size: 8.5pt !important;
+  letter-spacing: 1.5px !important;
+  font-weight: 600 !important;
+  color: #64748b !important;
+  margin-bottom: 2mm !important;
+}
+
+.pdf-cover-publisher {
+  font-size: 9.5pt !important;
+  color: #94a3b8 !important;
+  font-weight: 400 !important;
+  margin-bottom: 1.5mm !important;
+}
+
+.pdf-cover-publisher strong {
+  color: #cbd5e1 !important;
+  font-weight: 600 !important;
+}
+
+.pdf-footer-link,
+.pdf-cover-footer .pdf-cover-link {
+  color: #94a3b8 !important;
+  font-size: 9pt !important;
+  font-weight: 400 !important;
+  text-decoration: underline !important;
+}
+
+.pdf-footer-link {
+  color: #38bdf8 !important;
+  font-weight: 800 !important;
+  text-decoration: underline !important;
+}
+
+/* Table of Contents Page Styling */
+.pdf-toc-page {
+  page-break-before: always !important;
+  page-break-after: always !important;
+  break-before: page !important;
+  break-after: page !important;
+  margin-bottom: 10mm !important;
+}
+
+
+/* ==================================================
+   LAST PAGE BACK COVER PAGE STYLING (OVERRIDDEN)
+   ================================================== */
+.pdf-back-page {
+  page-break-before: always !important;
+  break-before: page !important;
+  width: 100%;
+  min-height: 80vh;
+  box-sizing: border-box;
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%) !important;
+  border: 2px solid #cbd5e1 !important;
+  border-radius: 16px !important;
+  padding: 10mm 8mm !important;
+  margin-top: 5mm !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  text-align: center !important;
+  color: #1e293b !important;
+}
+
+.pdf-back-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pdf-back-logo-badge {
+  font-size: 8.5pt;
+  letter-spacing: 2px;
+  font-weight: 800;
+  color: #2563eb;
+  background-color: #dbeafe;
+  padding: 3.5pt 10pt;
+  border-radius: 12px;
+  margin-bottom: 3mm;
+}
+
+.pdf-back-page h2,
+.pdf-back-title {
+  font-size: 16.5pt !important;
+  color: #0f172a !important;
+  font-weight: 900 !important;
+  margin: 0 0 2mm 0 !important;
+  border: none !important;
+  border-bottom: none !important;
+  background: transparent !important;
+  padding: 0 !important;
+  text-align: center !important;
+  page-break-before: avoid !important;
+}
+
+.pdf-back-page h3,
+.pdf-back-subtitle {
+  font-size: 12pt !important;
+  color: #475569 !important;
+  font-weight: 700 !important;
+  margin: 0 0 3mm 0 !important;
+  border: none !important;
+  border-bottom: none !important;
+  background: transparent !important;
+  padding: 0 !important;
+  text-align: center !important;
+  page-break-before: avoid !important;
+}
+
+.pdf-back-divider {
+  width: 55px;
+  height: 3px;
+  background: #2563eb;
+  border: none;
+  margin: 2mm auto 4mm auto;
+  border-radius: 2px;
+}
+
+.pdf-back-section {
+  width: 100%;
+  background: #ffffff;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 12px;
+  padding: 4mm 5mm;
+  margin-bottom: 4mm;
+  text-align: center;
+}
+
+.pdf-back-section-heading {
+  font-size: 9pt;
+  letter-spacing: 1.5px;
+  font-weight: 800;
+  color: #1e3a8a;
+  margin: 0 0 2mm 0;
+  border-bottom: 1px solid #e2e8f0;
+  padding-bottom: 1.5mm;
+  text-transform: uppercase;
+}
+
+.pdf-back-paragraph {
+  font-size: 10pt;
+  line-height: 1.7;
+  color: #334155;
+  margin-bottom: 2mm;
+  text-align: center;
+}
+
+.pdf-back-url-row {
+  font-size: 9.5pt;
+  color: #475569;
+  margin: 0;
+}
+
+.pdf-back-link {
+  color: #2563eb !important;
+  font-weight: 800 !important;
+  text-decoration: underline !important;
+}
+
+.pdf-back-qr-box {
+  background-color: #ffffff;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 12px;
+  padding: 4mm;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4mm;
+  margin: 2mm 0 4mm 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.pdf-back-qr {
+  width: 85px;
+  height: 85px;
+  border-radius: 6px;
+  border: 1px solid #e2e8f0;
+}
+
+.pdf-back-qr-text {
+  text-align: left;
+}
+
+.pdf-back-qr-label {
+  display: block;
+  font-size: 9pt;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 1mm;
+}
+
+.pdf-back-url {
+  font-size: 10.5pt;
+  font-weight: 800;
+  color: #2563eb;
+  text-decoration: underline;
+}
+
+.pdf-back-footer {
+  border-top: 1px solid #e2e8f0;
+  padding-top: 3.5mm;
+  width: 100%;
+}
+
+.pdf-back-license {
+  font-size: 8.5pt;
+  color: #64748b;
+  margin-bottom: 1mm;
+}
+
+.pdf-back-copyright {
+  font-size: 9pt;
+  font-weight: 700;
+  color: #475569;
+}
+
+/* Video Demo Card Box */
+.video-demo-box {
+  background-color: #f8fafc;
+  border: 1.5px solid #2563eb;
+  border-left: 5px solid #2563eb;
+  padding: 10px 14px;
+  border-radius: 6px;
+  margin: 16px 0;
+  color: #0f172a;
+  page-break-inside: avoid;
+}
+.video-demo-header {
+  font-weight: 700;
+  font-size: 10.5pt;
+  color: #1e3a8a;
+  margin-bottom: 4px;
+}
+.video-demo-link a {
+  color: #2563eb;
+  font-weight: 600;
+  font-size: 9.5pt;
+  text-decoration: underline;
+  word-break: break-all;
+}
+

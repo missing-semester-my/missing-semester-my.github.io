@@ -1,0 +1,362 @@
+/* Premium EPUB Stylesheet - Burmese Edition */
+
+@namespace epub "http://www.idpf.org/2007/ops";
+
+body {
+  font-family: "Noto Sans Myanmar", "Pyidaungsu", "Padauk", sans-serif;
+  line-height: 1.85;
+  font-size: 1.15em;
+  color: #0f172a;
+  background-color: #ffffff;
+  margin: 1.2em 1.8em;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Noto Sans Myanmar", "Pyidaungsu", sans-serif;
+  line-height: 1.45;
+  color: #0f172a;
+  margin-top: 1.6em;
+  margin-bottom: 0.7em;
+  font-weight: 700;
+  page-break-after: avoid;
+}
+
+h1 {
+  font-size: 1.85em;
+  color: #1e293b;
+  border-bottom: 3px solid #2563eb;
+  padding-bottom: 0.35em;
+}
+
+h2 {
+  font-size: 1.45em;
+  color: #1e3a8a;
+  border-bottom: 1.5px solid #cbd5e1;
+  padding-bottom: 0.25em;
+}
+
+h3 {
+  font-size: 1.25em;
+  color: #2563eb;
+}
+
+p {
+  margin-top: 0.9em;
+  margin-bottom: 0.9em;
+}
+
+a {
+  color: #2563eb;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+/* Code & Preformatted Text */
+code {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Courier, monospace;
+  font-size: 0.9em;
+  background-color: #f1f5f9;
+  color: #0f172a;
+  padding: 0.15em 0.35em;
+  border-radius: 4px;
+}
+
+pre {
+  background-color: #0f172a;
+  color: #f8fafc;
+  padding: 1.2em;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-size: 0.88em;
+  line-height: 1.55;
+  page-break-inside: avoid;
+  border: 1px solid #334155;
+}
+
+pre code {
+  background-color: transparent;
+  color: inherit;
+  padding: 0;
+  border: none;
+}
+
+/* Blockquotes */
+blockquote {
+  border-left: 4.5px solid #2563eb;
+  background-color: #f8fafc;
+  margin: 1.4em 0;
+  padding: 0.9em 1.3em;
+  color: #1e293b;
+  border-radius: 0 6px 6px 0;
+}
+
+/* Video Reference Card */
+.video-card {
+  border: 1.5px solid #cbd5e1;
+  background-color: #f8fafc;
+  border-radius: 10px;
+  padding: 1.4em;
+  margin: 2em 0;
+  page-break-inside: avoid;
+}
+
+.video-card-header {
+  border-bottom: 1px solid #e2e8f0;
+  padding-bottom: 0.6em;
+  margin-bottom: 0.8em;
+}
+
+.video-badge {
+  display: inline-block;
+  background-color: #ef4444;
+  color: #ffffff;
+  font-size: 0.8em;
+  font-weight: bold;
+  padding: 0.25em 0.7em;
+  border-radius: 4px;
+}
+
+.video-title {
+  margin-top: 0.5em;
+  margin-bottom: 0.3em;
+  font-size: 1.3em;
+}
+
+.video-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2em;
+}
+
+.video-thumbnail {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+}
+
+
+.video-qr-block {
+  display: flex;
+  align-items: center;
+  gap: 1.2em;
+  margin-top: 1em;
+  padding: 0.9em;
+  background-color: #ffffff;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+}
+
+.video-qr-code {
+  width: 95px;
+  height: 95px;
+}
+
+.qr-label {
+  display: block;
+  font-size: 0.9em;
+  color: #0f172a;
+  font-weight: bold;
+}
+
+.video-url {
+  font-size: 0.9em;
+  word-break: break-all;
+}
+
+.ext-url-print {
+  display: inline;
+  font-size: 0.85em;
+  color: #64748b;
+}
+
+/* External Links & References Appendix Table */
+.lecture-links-appendix {
+  margin: 1.8em 0;
+  padding: 1em 1.2em;
+  background-color: #f8fafc;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 8px;
+}
+
+.links-appendix-title {
+  margin-top: 0;
+  margin-bottom: 0.8em;
+  font-size: 1.1em;
+  color: #1e3a8a;
+  border-bottom: 1px solid #cbd5e1;
+  padding-bottom: 0.4em;
+}
+
+.links-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85em;
+  line-height: 1.45;
+}
+
+.links-table th {
+  background-color: #e2e8f0;
+  color: #0f172a;
+  padding: 0.5em 0.6em;
+  font-weight: bold;
+  border: 1px solid #cbd5e1;
+  text-align: left;
+}
+
+.links-table td {
+  padding: 0.5em 0.6em;
+  border: 1px solid #e2e8f0;
+  vertical-align: middle;
+}
+
+.links-table tr:nth-child(even) {
+  background-color: #ffffff;
+}
+
+.links-table tr:nth-child(odd) {
+  background-color: #f1f5f9;
+}
+
+.col-label {
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.col-url {
+  word-break: break-all;
+}
+
+.appendix-link {
+  color: #2563eb;
+  text-decoration: underline;
+  font-size: 0.85em;
+}
+
+.col-qr {
+  text-align: center;
+}
+
+.micro-qr {
+  width: 46px;
+  height: 46px;
+  display: block;
+  margin: 0 auto;
+  border: 1px solid #cbd5e1;
+  border-radius: 3px;
+  background-color: #ffffff;
+}
+
+/* Hide duplicate PDF HTML cover in EPUB readers */
+.pdf-cover-page {
+  display: none !important;
+}
+
+/* EPUB Back Page Styling */
+.pdf-back-page {
+  margin-top: 3em;
+  padding: 1.5em;
+  background-color: #f8fafc;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.pdf-back-logo-badge {
+  display: inline-block;
+  font-size: 0.8em;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+  color: #2563eb;
+  background-color: #dbeafe;
+  padding: 0.25em 0.8em;
+  border-radius: 12px;
+  margin-bottom: 0.8em;
+}
+
+.pdf-back-title {
+  font-size: 1.4em;
+  color: #0f172a;
+  margin: 0.2em 0;
+}
+
+.pdf-back-subtitle {
+  font-size: 1.1em;
+  color: #475569;
+  margin: 0.2em 0;
+}
+
+.pdf-back-divider {
+  width: 50px;
+  height: 3px;
+  background: #2563eb;
+  border: none;
+  margin: 0.8em auto;
+}
+
+.pdf-back-paragraph {
+  font-size: 0.95em;
+  line-height: 1.7;
+  color: #334155;
+  margin-bottom: 0.8em;
+}
+
+.pdf-back-qr-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  background: #ffffff;
+  padding: 0.8em;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  margin: 1em 0;
+}
+
+.pdf-back-qr {
+  width: 90px;
+  height: 90px;
+}
+
+.pdf-back-url {
+  font-weight: bold;
+  color: #2563eb;
+}
+
+.pdf-back-footer {
+  font-size: 0.85em;
+  color: #64748b;
+  border-top: 1px solid #e2e8f0;
+  padding-top: 0.8em;
+  margin-top: 0.8em;
+}
+
+/* Video Demo Card Box */
+.video-demo-box {
+  background-color: #f8fafc;
+  border: 1.5px solid #2563eb;
+  border-left: 5px solid #2563eb;
+  padding: 0.8em 1.2em;
+  border-radius: 6px;
+  margin: 1.2em 0;
+  color: #0f172a;
+}
+.video-demo-header {
+  font-weight: bold;
+  font-size: 0.95em;
+  color: #1e3a8a;
+  margin-bottom: 0.3em;
+}
+.video-demo-link a {
+  color: #2563eb;
+  font-weight: 600;
+  font-size: 0.88em;
+  text-decoration: underline;
+  word-break: break-all;
+}
+
+
+
