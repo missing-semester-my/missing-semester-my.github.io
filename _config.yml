@@ -17,7 +17,8 @@ future: true
 # safe: true # breaks local rendering if enabled
 timezone: Asia/Yangon
 analytics:
-  tracking_id: G-P7WVHD84D1
+  tracking_id: G-1ZWNWRRPX8
+  # tracking_id: G-P7WVHD84D1
 
 collections:
   '2019':
