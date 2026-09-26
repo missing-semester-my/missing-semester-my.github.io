@@ -1,6 +1,6 @@
 ---
 layout: lecture
-title: "Data Wrangling"
+title: "ဒေတာ ပြုပြင်စီမံခြင်း (Data Wrangling)"
 description: >
   sed၊ awk နှင့် Regular Expression များကဲ့သို့သော Command-line tool များကို အသုံးပြု၍ ဒေတာများကို ပြုပြင်ပြောင်းလဲနည်း လေ့လာပါ။
 thumbnail: /static/assets/thumbnails/2020/lec4.png

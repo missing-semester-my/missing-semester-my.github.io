@@ -22,7 +22,7 @@ Debugger များသည် ပရိုဂရမ်၏ အလုပ်လု
 
 ## GDB/LLDB
 
-[GDB](https://www.gnu.org/software/gdb/) နှင့် [LLDB](https://lldb.llvm.org/)။ C ၏ ပုံစံတူ ဘာသာစကား အမြောက်အမြားကို ထောက်ပံ့ပေးထားပါသည်။
+[GDB](https://www.gnu.org/software/gdb/) နှင့် [LLDB](https://lldb.llvm.org/)။ C နှင့် ဆင်တူသော ဘာသာစကား အမြောက်အမြားကို ထောက်ပံ့ပေးထားပါသည်။
 
 [example.c](/2019/files/example.c) ကို ကြည့်ကြပါစို့။ Debug flags ဖြင့် compile လုပ်ပါ:
 `gcc -g -o example example.c`။
