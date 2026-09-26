@@ -1,4 +1,5 @@
 /* Copyright (c) 2017 Anish Athalye */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Myanmar:wght@300;400;500;600;700&display=swap');
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
 @import url(https://fonts.googleapis.com/css?family=Source+Code+Pro);
 
@@ -12,9 +13,9 @@
 }
 
 html {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Source Sans Pro", "Noto Sans Myanmar", "Pyidaungsu", "Padauk", "Myanmar3", sans-serif;
   font-size: 14pt;
-  line-height: 1.5;
+  line-height: 1.8;
 }
 
 body {
@@ -27,7 +28,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1rem;
   font-weight: bold;
-  line-height: 1.25;
+  line-height: 1.4;
   font-size: 1rem;
 }
 
