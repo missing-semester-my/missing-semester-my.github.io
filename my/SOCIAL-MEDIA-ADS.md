@@ -1,5 +1,5 @@
 # Social Media & Facebook Ads Campaign Kit
-## The Missing Semester of Your CS Education (မြန်မာဘာသာ)
+## The Missing Semester of Your CS Education (Burmese / မြန်မာဘာသာ)
 
 ---
 
@@ -7,9 +7,9 @@
 
 ### Option 1: Direct Hook & Value Proposition (အဓိက ပရိုမိုးရှင်း စာသား)
 
-> 🚀 **ကျောင်းမှာ မသင်ခဲ့ရပေမဲ့ ကွန်ပျူတာသိပ္ပံ သမားတိုင်း မဖြစ်မနေ သိထားရမယ့် Tools များ!**
+> 🚀 **The Missing Semester of Your CS Education (Burmese Edition)**
 > 
-> Computer Science / IT သင်တန်းတွေမှာ Programming Language တွေ၊ Algorithm တွေကို သင်ပေးကြပေမဲ့ Command Line Shell၊ Vim၊ Git၊ Profiler၊ Docker နဲ့ Security စတဲ့ **လက်တွေ့အလုပ်ခွင်မှာ နေ့စဉ်သုံးနေရတဲ့ ကိရိယာ (tools)** တွေကို သီးသန့် သင်ပေးလေ့မရှိပါဘူး။
+> CS / IT ကျောင်းတွေနဲ့ Programming Bootcamp တွေမှာ Language တွေ၊ Framework တွေကို သင်ပေးကြပေမဲ့ Command Line Shell၊ Vim၊ Git၊ Profiler၊ Docker နဲ့ Security စတဲ့ **လက်တွေ့အလုပ်ခွင်မှာ နေ့စဉ်သုံးနေရတဲ့ ကိရိယာ (tools)** တွေကို သီးသန့် သင်ပေးလေ့မရှိပါဘူး။
 > 
 > ဒါကြောင့် **MIT (Massachusetts Institute of Technology)** ရဲ့ ကျော်ကြားလှတဲ့ **"The Missing Semester of Your CS Education"** သင်ခန်းစာများကို မြန်မာဘာသာသို့ အပြည့်အဝ ပြန်ဆိုထားပြီး ဖြစ်ပါတယ်။
 > 
@@ -36,7 +36,7 @@
 > 
 > သင့်မှာရော ဒီလို အခက်အခဲတွေ ရှိဖူးပါသလား? 🤔
 > 
-> MIT မှ နည်းပြများ ရေးသားထားသော **Missing Semester** သင်ခန်းစာများက သင့်ကို Junior Level မှ Pro Developer တစ်ယောက်ဖြစ်အောင် ဖြည့်ဆည်းပေးပါလိမ့်မည်။
+> MIT မှ နည်းပြများ ရေးသားထားသော **The Missing Semester of Your CS Education** သင်ခန်းစာများက သင့်ကို Junior Level မှ Pro Developer တစ်ယောက်ဖြစ်အောင် ဖြည့်ဆည်းပေးပါလိမ့်မည်။
 > 
 > 📚 **အခမဲ့ PDF / EPUB Download ရယူရန်:**
 > 👉 https://missing-semester-my.github.io/
@@ -47,9 +47,9 @@
 
 ### Option 3: Short & Punchy (ဖုန်းဖြင့် အမြန်ကြည့်သူများအတွက်)
 
-> 🎓 **MIT CSIL ရဲ့ Missing Semester (မြန်မာဘာသာပြန်)**
+> 🎓 **The Missing Semester of Your CS Education (Burmese)**
 > 
-> Computer Science သမားတိုင်း နေ့စဉ် အသုံးပြုနေရတဲ့ Shell, Git, Vim, Debugger နဲ့ AI Tools များကို အခြေခံမှစ၍ အခမဲ့ လေ့လာလိုက်ပါ။
+> Developer တိုင်း နေ့စဉ် အသုံးပြုနေရတဲ့ Shell, Git, Vim, Debugger နဲ့ AI Tools များကို အခြေခံမှစ၍ အခမဲ့ လေ့လာလိုက်ပါ။
 > 
 > 📘 **PDF / EPUB eBook Download:** https://missing-semester-my.github.io/
 > 
