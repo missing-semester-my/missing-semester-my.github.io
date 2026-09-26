@@ -55,6 +55,9 @@ jobs:
             ^https:\/\/medium\.com\/
             ^https:\/\/www\.gnu\.org\/
             ^https:\/\/openai\.com\/
+            ^https:\/\/.*\.fandom\.com\/
           swap_urls: |
-            {"^https:\\/\\/missing\\.csail\\.mit\\.edu/": "/",
+            {"^https:\\/\\/missing-semester-my\\.github\\.io/": "/",
+             "^https:\\/\\/missing\\.csail\\.mit\\.edu/": "/",
              "^(https:\\/\\/github\\.com/.*)#.*$": "\\1"}
+

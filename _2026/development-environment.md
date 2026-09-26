@@ -24,7 +24,7 @@ IDEs နှင့် terminal အခြေပြု လုပ်ငန်းစ�
 
 [vs-code]: https://code.visualstudio.com/
 
-# စာသား တည်းဖြတ်ခြင်း နှင့် Vim
+# စာသား တည်းဖြတ်ခြင်း နှင့် Vim {#text-editing-and-vim}
 
 ပရိုဂရမ် ရေးသားသည့်အခါ သင်၏ အချိန်အများစုကို စာကြောင်းအရှည်ကြီးများ ဆက်တိုက် ရေးသားခြင်း သို့မဟုတ် ဖိုင်တစ်ခုလုံးကို အထက်မှ အောက်သို့ အဆုံးထိ ဖတ်ရှုခြင်းတို့ထက် ကုဒ်များအတွင်း သွားလာလှုပ်ရှားခြင်း၊ ကုဒ် အစိတ်အပိုင်းများကို ဖတ်ရှုခြင်းနှင့် ကုဒ်များကို ပြင်ဆင်တည်းဖြတ်ခြင်းတို့တွင် ပိုမို ကုန်လွန်စေသည်။ [Vim] သည် ဤကဲ့သို့သော အလုပ်များကို ထိရောက်စွာ လုပ်ဆောင်နိုင်ရန် အထူး ပြုပြင်ဖန်တီးထားသည့် text editor တစ်ခု ဖြစ်သည်။
 
@@ -181,7 +181,7 @@ Vim ကို လေ့လာရန် အကောင်းဆုံး နည�
 
 [Vim]: https://www.vim.org/
 
-# Code intelligence နှင့် language servers
+# Code intelligence နှင့် language servers {#code-intelligence-and-language-servers}
 
 IDEs များသည် ပုံမှန်အားဖြင့် [Language Server Protocol](https://microsoft.github.io/language-server-protocol/) ကို အကောင်အထည်ဖော်ထားသည့် _language servers_ များနှင့် ချိတ်ဆက်ထားသော IDE extensions များမှတစ်ဆင့် ကုဒ်၏ သဘောတရားဆိုင်ရာ နားလည်မှုကို လိုအပ်သည့် သက်ဆိုင်ရာ ပရိုဂရမ်းမင်း ဘာသာစကားအလိုက် ထောက်ပံ့မှုများကို ပေးအပ်ကြသည်။ ဥပမာအားဖြင့် [VS Code အတွက် Python extension](https://marketplace.visualstudio.com/items?itemName=ms-python.python) သည် [Pylance](https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance) ပေါ်တွင် အမှီပြုထားပြီး၊ [VS Code အတွက် Go extension](https://marketplace.visualstudio.com/items?itemName=golang.go) သည် သီးသန့်ထုတ်လုပ်ထားသော [gopls](https://go.dev/gopls/) ပေါ်တွင် အမှီပြုထားသည်။ သင် အသုံးပြုသည့် ဘာသာစကားများအတွက် extension နှင့် language server များကို တပ်ဆင်ခြင်းဖြင့် သင့် IDE တွင် ဘာသာစကားဆိုင်ရာ လုပ်ဆောင်ချက် အများအပြားကို အသုံးပြုနိုင်မည် ဖြစ်သည်၊ ဥပမာ-
 
@@ -198,7 +198,7 @@ IDEs များသည် ပုံမှန်အားဖြင့် [Langua
 
 ဘာသာစကားအပေါ် မူတည်၍ သင့် language server အတွက် ပြင်ဆင် သတ်မှတ်နိုင်သည့် settings အချို့ ရှိနိုင်သည်။ ဥပမာအားဖြင့် VS Code တွင် Python ထောက်ပံ့မှုကို အသုံးပြု၍ Python ၏ optional type annotations များကို အသုံးမပြုသော project များအတွက် static type checking ကို ပိတ်ထားနိုင်သည်။
 
-# AI စွမ်းအားသုံး ဆော့ဖ်ဝဲလ် ရေးသားခြင်း
+# AI စွမ်းအားသုံး ဆော့ဖ်ဝဲလ် ရေးသားခြင်း {#ai-powered-development}
 
 ၂၀၂၁ အလယ်ပိုင်းတွင် OpenAI ၏ [Codex model](https://openai.com/index/openai-codex/) ကို အသုံးပြုထားသည့် [GitHub Copilot][github-copilot] စတင် မိတ်ဆက်ချိန်မှစ၍ [LLMs](https://en.wikipedia.org/wiki/Large_language_model) များကို ဆော့ဖ်ဝဲလ် အင်ဂျင်နီယာ လောကတွင် ကျယ်ကျယ်ပြန့်ပြန့် အသုံးပြုလာကြသည်။ လက်ရှိတွင် အဓိက အသုံးပြုနေသည့် ပုံစံ ၃ မျိုး ရှိသည် - autocomplete၊ inline chat နှင့် coding agents တို့ ဖြစ်ကြသည်။
 
@@ -289,7 +289,7 @@ Coding agents အကြောင်းကို [Agentic Coding သင်ခန�
 
 လူကြိုက်များသော AI IDEs အချို့မှာ [GitHub Copilot][github-copilot] extension ပါဝင်သည့် [VS Code][vs-code] နှင့် [Cursor](https://cursor.com/) တို့ ဖြစ်ကြသည်။ GitHub Copilot ကို လက်ရှိတွင် ကျောင်းသားများ၊ ဆရာ/မများနှင့် လူကြိုက်များသော open source project များမှ ပြုပြင်ထိန်းသိမ်းသူများအတွက် [အခမဲ့ ရရှိနိုင်ပါသည်](https://github.com/education/students)။ ဤနယ်ပယ်သည် အလွန် လျင်မြန်စွာ တိုးတက်ပြောင်းလဲနေသော နယ်ပယ် ဖြစ်သည်။ ထိပ်တန်း ထုတ်ကုန် အများအပြားတွင် အကြမ်းအားဖြင့် တူညီသော လုပ်ဆောင်ချက်များ ပါရှိကြသည်။
 
-# Extensions များ နှင့် အခြား IDE လုပ်ဆောင်ချက်များ
+# Extensions များ နှင့် အခြား IDE လုပ်ဆောင်ချက်များ {#extensions-and-other-ide-functionality}
 
 IDEs များသည် စွမ်းဆောင်ရည်မြင့်မားသော ကိရိယာများ ဖြစ်ကြပြီး _extensions_ များ ကြောင့် ပိုမို စွမ်းဆောင်ရည် မြင့်မားလာကြသည်။ ကျွန်တော်တို့အနေဖြင့် သင်ခန်းစာ တစ်ခုတည်းတွင် ဤလုပ်ဆောင်ချက် အားလုံးကို မဖော်ပြနိုင်သော်လည်း လူကြိုက်များသော extension အချို့အတွက် ညွှန်ပြချက် အချို့ကို ဤနေရာတွင် ပေးအပ်ထားပါသည်။ ဤနယ်ပယ်ကို ကိုယ်တိုင် စူးစမ်း လေ့လာရန် တိုက်တွန်းပါသည်፤ အွန်လိုင်းတွင် Vim plugins များအတွက် [Vim Awesome](https://vimawesome.com/) နှင့် [လူကြိုက်အများဆုံး စီစဉ်ထားသော VS Code extensions များ](https://marketplace.visualstudio.com/search?target=VSCode&category=All%20categories&sortBy=Installs) ကဲ့သို့သော လူကြိုက်များသည့် IDE extensions စာရင်းများစွာ ရှိပါသည်။
 
